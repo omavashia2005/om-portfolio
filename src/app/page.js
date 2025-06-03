@@ -49,7 +49,7 @@ export default function Home() {
       <section  id='home' />
       <main className="p-8 pt-50">
       <section className="flex flex-col md:flex-row items-center justify-center gap-4 p-4">
-      <h1 className="text-3xl md:text-5xl font-bold">{"print(Hello, World!)"}</h1>
+      <h1 className="text-3xl md:text-5xl font-bold">{"print('Hello, World!')"}</h1>
       <h3 className="text-lg md:text-xl caret">|</h3>
       <Image src="/fav.JPG" width={450} height={450} alt="Pic" className="w-full max-w-xs md:max-w-md" />
       </section>
