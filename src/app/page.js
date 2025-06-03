@@ -13,6 +13,7 @@ import React, {useEffect} from 'react';
 import TechStack from '@/components/TechStack';
 import {motion}  from 'framer-motion';
 const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'] });
+import Head from 'next/head';
 
 export default function Home() {
   useEffect(() => {
@@ -38,15 +39,19 @@ export default function Home() {
   const internshipDescription = "Developed a full-stack AI-driven contract generation and review system using React.js, Python (FastAPI WebSockets, LiteLLM). Integrated Dify.ai with Tiptap for seamless UX and real-time rich text editing. Reduced LLM response time from 16s to <2s by implementing response token streaming through web sockets.";
   return (
     <div className={jetbrainsMono.className}>
+
+    <Head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </Head>
+
      <section  id='home' />
       <Navbar />
       <section  id='home' />
       <main className="p-8 pt-50">
-      <section className="items-center flex justify-center">
-        <h1 className="text-5xl font-bold">{"print(Hello, World!)"}</h1> 
-        <h3 className="caret">|</h3>
-        <section className='p-10'> <Image src="/fav.JPG" width={450} height={450} alt='Pic' />  </section>
-        
+      <section className="flex flex-col md:flex-row items-center justify-center gap-4 p-4">
+      <h1 className="text-3xl md:text-5xl font-bold">{"print(Hello, World!)"}</h1>
+      <h3 className="text-lg md:text-xl caret">|</h3>
+      <Image src="/fav.JPG" width={450} height={450} alt="Pic" className="w-full max-w-xs md:max-w-md" />
       </section>
       
 
