@@ -3,14 +3,14 @@ import Image from "next/image";
 export default function ExperienceCard({ company, title, location, link, techStack = [] }) {
   return (
     <div className="border border-black p-6 rounded-lg shadow-lg bg-black">
-      <h2 className="text-2xl font-bold">{title}, May 2025 - July 2025</h2>
-      <div className="flex flex-wrap gap-2 items-center text-lg font-semibold">
-        <h3>{company}</h3>
-        {link && (
+      <h2 className="text-2xl font-bold">{title} @ {company}</h2>
+      {link && (
           <a href={link} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
             ({new URL(link).hostname})
           </a>
         )}
+      <div className="flex flex-wrap gap-2 items-center text-lg font-semibold">
+        <h3>May 2025 - Present</h3>
       </div>
       <p className="text-sm text-gray-600 font-medium">{location}</p>
 
