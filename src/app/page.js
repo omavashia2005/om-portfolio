@@ -64,7 +64,7 @@ export default function Home() {
         {/* ---------------- ABOUT -------------------- */}
       <section id='about'></section>
       
-        <section data-aos="fade-up" className='my-40 h-screen text-center'>
+        <section data-aos="fade-up" className='my-40 min-h-screen text-center'>
           
         <div className="max-w-7xl mx-auto px-8 text-center">
         <h1 className="text-3xl">My name is Om.</h1> <br/>
@@ -138,7 +138,7 @@ export default function Home() {
     {/* ---------------- EXPERIENCE -------------------- */}
       <section id='experience'></section>
       <br/> <br/>
-      <section data-aos="fade-up" className='text-left'>
+      <section data-aos="fade-up" className='text-left my-40'>
       <section data-aos="fade" className='text-center'>
         <h1 className="text-3xl">Experience</h1> <br/>
         </section>
