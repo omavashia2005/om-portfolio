@@ -43,7 +43,7 @@ export default function Home() {
       <section  id='home' />
       <main className="p-8 pt-50">
       <section className="items-center flex justify-center">
-        <h1 className="text-5xl font-bold">print("Hello, World!")</h1> 
+        <h1 className="text-5xl font-bold">{"print(Hello, World!)"}</h1> 
         <h3 className="caret">|</h3>
         <section className='p-10'> <Image src="/fav.JPG" width={450} height={450} alt='Pic' />  </section>
         
@@ -59,7 +59,7 @@ export default function Home() {
           
         <div className="max-w-7xl mx-auto px-8 text-center">
         <h1 className="text-3xl">My name is Om.</h1> <br/>
-        <h1 className="text-3xl">I'm  a Software Engineer, AI Enthusiast, and CS Junior @ ASU.</h1>
+        <h1 className="text-3xl">{"I'm  a Software Engineer, AI Enthusiast, and CS Junior @ ASU."}</h1>
         </div>
 
          {/* ---------------- STACK -------------------- */}
