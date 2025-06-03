@@ -70,18 +70,16 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-8 text-center">
         <h1 className="text-3xl">{"Hi! I'm Om."}</h1> <br/>
         <h1 className="text-3xl font-bold text-center">
-
-        <span className="inline-block min-h-[2.5rem] w-[250px] sm:w-[300px] md:w-[400px] align-middle text-center">
-          <Typewriter
-            words={['Software Engineer', 'Fullstack Developer', 'AI Enthusiast']}
-            loop
-            typeSpeed={100}
-            deleteSpeed={70}
-            delaySpeed={1000}
-          />
-        </span>
-        </h1> <br/>
-
+            <span className="inline-block min-h-[2.5rem] w-[250px] sm:w-[300px] md:w-[400px] align-middle mx-auto">
+              <Typewriter
+                words={['Software Engineer', 'Fullstack Developer', 'AI Enthusiast']}
+                loop
+                typeSpeed={100}
+                deleteSpeed={70}
+                delaySpeed={1000}
+              />
+            </span>
+        </h1> <br />
         <p className='font-medium text-gray-400'>
         {"I'm also a Computer Science junior at Arizona State University’s Ira A. Fulton Schools of Engineering. Currently, I’m a Software Engineering Intern at IP Author, where I’m harnessing"} {" "}
         <span className='bg-white text-black font-bold'>large language models (LLMs) to reimagine patenting.</span> {" "}
