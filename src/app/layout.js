@@ -15,11 +15,10 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Om's Portfolio",
-  description: "Portfolio of Om Avashia",
+  description: "Om Avashia's Portfolio Website",
   icons: {
     icon: "/favicon.png",
     shortcut: "/favicon.png",
-    apple: "/apple-touch-icon.png",
   },
 };
 
@@ -28,6 +27,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="I'm a Software Engineer, AI Enthusiast, and CS Junior @ ASU. Visit my portfolio to explore projects and connect!" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
