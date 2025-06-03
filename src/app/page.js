@@ -71,7 +71,7 @@ export default function Home() {
         <h1 className="text-3xl">{"Hi! I'm Om."}</h1> <br/>
         <h1 className="text-3xl font-bold text-center">
 
-        <span className="inline-block min-h-[2.5rem] w-[250px] sm:w-[300px] md:w-[400px] align-middle">
+        <span className="inline-block min-h-[2.5rem] w-[250px] sm:w-[300px] md:w-[400px] align-middle text-center">
           <Typewriter
             words={['Software Engineer', 'Fullstack Developer', 'AI Enthusiast']}
             loop
