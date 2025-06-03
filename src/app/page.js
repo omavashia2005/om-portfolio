@@ -1,103 +1,242 @@
-import Image from "next/image";
+"use client";
+
+import Image from 'next/image';
+import ProjectCard from '@/components/ProjectCard';
+import Navbar from '../components/Navbar';
+import Footer from '@/components/Footer';
+import ExperienceCard from '@/components/ExperienceCard';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import UniWorkCard from "@/components/UniWorkCard";
+import { JetBrains_Mono } from 'next/font/google';
+import React, {useEffect} from 'react';
+import TechStack from '@/components/TechStack';
+import {motion}  from 'framer-motion';
+const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'] });
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false, // Allow repeated animations
+    });
+    AOS.refresh(); // Refresh animations after load or navigation
+  }, []);
+  
+  const expenseTrackerDescription = "A fullstack app with a Spring Boot backend for tracking expenses, featuring JWT-based authentication, BCrypt password hashing, PostgreSQL integration, and a layered architecture, complete with a Streamlit frontend";
+  const expenseTrackerLink = "https://github.com/omavashia2005/expenseTracker";
+  
+  const chromaLiteDesc = "A simple, custom neural network trained on 1,900+ synthetically generated chromagrams to classify Western musical scales"
+  const chromaLiteLink = "https://github.com/omavashia2005/ChromaLite"
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  const contractAuthorDesc = "Full-stack AI-driven contract generation and review system built on TipTap with React.js and Python (FastAPI WebSockets, LiteLLM, Dify.AI)"
+  const contractAuthorLink = "https://github.com/omavashia2005/contract-author"
+
+  const L = "https://github.com/omavashia2005/Rainfall-Prediction-using-ML"
+
+
+  const internshipDescription = "Developed a full-stack AI-driven contract generation and review system using React.js, Python (FastAPI WebSockets, LiteLLM). Integrated Dify.ai with Tiptap for seamless UX and real-time rich text editing. Reduced LLM response time from 16s to <2s by implementing response token streaming through web sockets.";
+  return (
+    <div className={jetbrainsMono.className}>
+     <section  id='home' />
+      <Navbar />
+      <section  id='home' />
+      <main className="p-8 pt-50">
+      <section className="items-center flex justify-center">
+        <h1 className="text-5xl font-bold">print("Hello, World!")</h1> 
+        <h3 className="caret">|</h3>
+        <section className='p-10'> <Image src="/fav.JPG" width={450} height={450} alt='Pic' />  </section>
+        
+      </section>
+      
+
+
+
+        {/* ---------------- ABOUT -------------------- */}
+      <section id='about'></section>
+      
+        <section data-aos="fade-up" className='my-40 h-screen text-center'>
+          
+        <div className="max-w-7xl mx-auto px-8 text-center">
+        <h1 className="text-3xl">My name is Om.</h1> <br/>
+        <h1 className="text-3xl">I'm  a Software Engineer, AI Enthusiast, and CS Junior @ ASU.</h1>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+
+         {/* ---------------- STACK -------------------- */}
+         <section className='text-center py-10'>
+          <a href="/Om_Avashia_Resume.pdf" download="Om_Kashyap_Resume.pdf" className='inline-flex items-center'>
+            <span className='ml-2 bg-white text-black rounded px-3 py-1'>Download Resume</span>
+          </a>
+      </section>
+
+         <section className="overflow-hidden py-8 bg-black-50 my-20">
+            
+            <div className='text-center'>
+            <h1 className="text-3xl">Tech Stack</h1> <br/>
+          </div>
+      <motion.div
+        className="flex gap-8"
+        animate={{ x: ['0%', '-50%'] }} // Moves left by 50% width
+        transition={{ repeat: Infinity, duration: 20, ease: 'linear' }}
+        style={{ width: 'max-content', display: 'flex' }}
+      >
+        <TechStack
+          techStack={[
+            { name: "Java", logo: "https://www.vectorlogo.zone/logos/java/java-icon.svg" },
+            { name: "Spring Boot", logo: "https://www.vectorlogo.zone/logos/springio/springio-icon.svg" },
+            { name: "Python", logo: "https://www.vectorlogo.zone/logos/python/python-icon.svg" },
+            { name: "PyTorch", logo: "https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" },
+            { name: "NumPy", logo: "https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg" },
+            { name: "Pandas", logo: "https://pandas.pydata.org/static/img/pandas_mark.svg" },
+            { name: "Matplotlib", logo: "https://matplotlib.org/_static/images/logo2.svg" },
+            { name: "JS", logo: "https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" },
+            { name: "React.js", logo: "https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" },
+            { name: "Vite", logo: "https://www.vectorlogo.zone/logos/vitejsdev/vitejsdev-icon.svg" },
+            { name: "Next", logo: "https://www.vectorlogo.zone/logos/nextjs/nextjs-icon.svg" },
+            { name: "HTML", logo: "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" }, 
+            { name: "CSS", logo: "https://www.vectorlogo.zone/logos/w3_css/w3_css-icon~old.svg" },
+            { name: "PostgreSQL", logo: "https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg" },
+            { name: "Git", logo:"https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"}
+          ].concat([
+            // Duplicate for seamless loop
+            { name: "Java", logo: "https://www.vectorlogo.zone/logos/java/java-icon.svg" },
+            { name: "Spring Boot", logo: "https://www.vectorlogo.zone/logos/springio/springio-icon.svg" },
+            { name: "Python", logo: "https://www.vectorlogo.zone/logos/python/python-icon.svg" },
+            { name: "PyTorch", logo: "https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" },
+            { name: "NumPy", logo: "https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg" },
+            { name: "Pandas", logo: "https://pandas.pydata.org/static/img/pandas_mark.svg" },
+            { name: "Matplotlib", logo: "https://matplotlib.org/_static/images/logo2.svg" },
+            { name: "JS", logo: "https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" },
+            { name: "React.js", logo: "https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" },
+            { name: "Vite", logo: "https://www.vectorlogo.zone/logos/vitejsdev/vitejsdev-icon.svg" },
+            { name: "Next", logo: "https://www.vectorlogo.zone/logos/nextjs/nextjs-icon.svg" },
+            { name: "HTML", logo: "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" }, 
+            { name: "CSS", logo: "https://www.vectorlogo.zone/logos/w3_css/w3_css-icon~old.svg" },
+            { name: "PostgreSQL", logo: "https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg" },
+            { name: "Git", logo:"https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"}
+          ])} 
+        />
+      </motion.div>
+    </section>
+
+        </section>        
+
+    
+
+    {/* ---------------- EXPERIENCE -------------------- */}
+      <section id='experience'></section>
+      <br/> <br/>
+      <section data-aos="fade-up" className='text-left'>
+      <section data-aos="fade" className='text-center'>
+        <h1 className="text-3xl">Experience</h1> <br/>
+        </section>
+      <ExperienceCard 
+        company={"IP Author"} 
+        title={"Software Engineering Intern"} 
+        location={"San Mateo, CA"}  
+        link={"https://ipauthor.com/"}
+        techStack={[
+          { name: "React.js", logo: "https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" },
+          { name: "JS", logo: "https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" },
+          { name: "HTML", logo: "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"}, 
+          { name: "CSS", logo: "https://www.vectorlogo.zone/logos/w3_css/w3_css-icon~old.svg"},
+          { name: "Python", logo: "https://www.vectorlogo.zone/logos/python/python-icon.svg" },
+          { name: "Vite", logo: "https://www.vectorlogo.zone/logos/vitejsdev/vitejsdev-icon.svg" },
+          { name: "Git", logo:"https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"}
+        ]}
+        /> 
+        </section>
+      
+      {/* ---------------- PROJECTS -------------------- */}
+
+      <section id='projects'></section>
+      <section data-aos="fade-up" className='my-40 text-left'>
+        <div className='text-center'>
+        <section data-aos="fade-up">
+          <h1 className="text-3xl">Projects</h1> <br/>
+        </section>
+        </div>
+        
+        <ProjectCard 
+
+          title={"Contract Author (internship project)"}
+          description={contractAuthorDesc}
+          link={contractAuthorLink}
+          techStack={[
+            { name: "React.js", logo: "https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" },
+            { name: "JS", logo: "https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" },
+            { name: "HTML", logo: "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"}, 
+            { name: "CSS", logo: "https://www.vectorlogo.zone/logos/w3_css/w3_css-icon~old.svg"},
+            { name: "Python", logo: "https://www.vectorlogo.zone/logos/python/python-icon.svg" },
+            { name: "Vite", logo: "https://www.vectorlogo.zone/logos/vitejsdev/vitejsdev-icon.svg" },
+
+          ]}
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+          
+        <ProjectCard 
+        title={"Expense Tracker"} 
+        description={expenseTrackerDescription} 
+        link={expenseTrackerLink}
+        techStack={[
+          { name: "Java", logo: "https://www.vectorlogo.zone/logos/java/java-icon.svg" },
+          { name: "Python", logo: "https://www.vectorlogo.zone/logos/python/python-icon.svg" },
+          { name: "Spring Boot", logo: "https://www.vectorlogo.zone/logos/springio/springio-icon.svg" },
+          { name: "PostgreSQL", logo: "https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg" },
+          { name: "JWT", logo: "https://svgmix.com/uploads/44dd3e-jwt-icon.svg" },
+          { name: "IntelliJ IDEA", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" },
+        ]}
+        />
+      <br/>
+        
+      <ProjectCard 
+        title={"ChromaLite"} 
+        description={chromaLiteDesc} 
+        link={chromaLiteLink} 
+        techStack={[
+          { name: "Python", logo: "https://www.vectorlogo.zone/logos/python/python-icon.svg" },
+          { name: "PyTorch", logo: "https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" },
+          { name: "NumPy", logo: "https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg" },
+          { name: "Pandas", logo: "https://pandas.pydata.org/static/img/pandas_mark.svg" },
+          { name: "Matplotlib", logo: "https://matplotlib.org/_static/images/logo2.svg" },
+        ]}
+      />    
+    <br/>
+
+    <ProjectCard 
+        title={"Rainfall Prediciton using Machine Learning"} 
+        description={"A machine learning pipeline built from scratch to predict rainfall."} 
+        link={L} 
+        techStack={[
+          { name: "Python", logo: "https://www.vectorlogo.zone/logos/python/python-icon.svg" },
+          { name: "NumPy", logo: "https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg" },
+          { name: "Pandas", logo: "https://pandas.pydata.org/static/img/pandas_mark.svg" },
+          { name: "sklearn", logo: "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg"}
+        ]}
+      />   
+      </section>
+
+      {/* ---------------- CONTACT -------------------- */}
+
+      <section id='contact' data-aos="fade-up" className="my-40 text-center">
+  <h1 className="text-3xl mb-4">Contact</h1>
+  <div className="flex justify-center gap-4">
+    
+    <a href='https://www.linkedin.com/in/omavashia/'>
+    <Image src="https://www.vectorlogo.zone/logos/linkedin/linkedin-tile.svg" width={40} height={40} alt="LinkedIn" />
+    </a>
+    <a href='mailto:oavashia@asu.edu'>
+    <Image src="https://www.vectorlogo.zone/logos/gmail/gmail-tile.svg" width={40} height={40} alt="Mail" />
+    </a>
+    
+
+  </div>
+</section>
+
+      
+      <Footer />
+      </main> 
     </div>
-  );
+
+  )
 }
