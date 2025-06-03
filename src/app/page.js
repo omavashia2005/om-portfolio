@@ -14,6 +14,7 @@ import TechStack from '@/components/TechStack';
 import {motion}  from 'framer-motion';
 const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'] });
 import Head from 'next/head';
+import { Typewriter } from 'react-simple-typewriter';
 
 export default function Home() {
   useEffect(() => {
@@ -30,7 +31,7 @@ export default function Home() {
   const chromaLiteDesc = "A simple, custom neural network trained on 1,900+ synthetically generated chromagrams to classify Western musical scales"
   const chromaLiteLink = "https://github.com/omavashia2005/ChromaLite"
 
-  const contractAuthorDesc = "Full-stack AI-driven contract generation and review system built on TipTap with React.js and Python (FastAPI WebSockets, LiteLLM, Dify.AI)"
+  const contractAuthorDesc = "Fullstack AI-driven contract generation and review web application built with the Tiptap rich text editor, React.js and Python (FastAPI WebSockets, LiteLLM, Dify.AI)"
   const contractAuthorLink = "https://github.com/omavashia2005/contract-author"
 
   const L = "https://github.com/omavashia2005/Rainfall-Prediction-using-ML"
@@ -68,9 +69,20 @@ export default function Home() {
           
         <div className="max-w-7xl mx-auto px-8 text-center">
         <h1 className="text-3xl">{"Hi! I'm Om."}</h1> <br/>
-        <h1 className="text-3xl">{"Software Engineer | Fullstack Developer | AI Enthusiast "}</h1> <br />
-    
-              <p className='font-medium text-gray-400'>
+        <h1 className="text-3xl font-bold text-center">
+
+        <span className="inline-block min-h-[2.5rem] w-[250px] sm:w-[300px] md:w-[400px] align-middle">
+          <Typewriter
+            words={['Software Engineer', 'Fullstack Developer', 'AI Enthusiast']}
+            loop
+            typeSpeed={100}
+            deleteSpeed={70}
+            delaySpeed={1000}
+          />
+        </span>
+        </h1> <br/>
+
+        <p className='font-medium text-gray-400'>
         {"I'm also a Computer Science junior at Arizona State University’s Ira A. Fulton Schools of Engineering. Currently, I’m a Software Engineering Intern at IP Author, where I’m harnessing"} {" "}
         <span className='bg-white text-black font-bold'>large language models (LLMs) to reimagine patenting.</span> {" "}
         My passion lies in {" "}
@@ -226,7 +238,7 @@ export default function Home() {
 
     <ProjectCard 
         title={"Rainfall Prediciton using Machine Learning"} 
-        description={"A machine learning pipeline built from scratch to predict rainfall."} 
+        description={"A machine learning pipeline built from scratch to predict rainfall"} 
         link={L} 
         techStack={[
           { name: "Python", logo: "https://www.vectorlogo.zone/logos/python/python-icon.svg" },

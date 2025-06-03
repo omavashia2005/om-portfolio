@@ -16,9 +16,9 @@ export default function ExperienceCard({ company, title, location, link, techSta
 
       <ul className="list-disc pl-6 space-y-2 mt-3">
         <li>
-          Developed a full-stack AI-driven contract generation and review system built on{" "}
+          Developed a full-stack AI-driven contract generation and review system built with{" "}
           <strong className="bg-white text-black font-bold">
-            TipTap with React.js and Python (FastAPI, LiteLLM, Dify.AI)
+            Tiptap, React.js and Python (FastAPI, LiteLLM, Dify.AI)
           </strong>
         </li>
         <li>
@@ -26,7 +26,7 @@ export default function ExperienceCard({ company, title, location, link, techSta
           <strong className="bg-white text-black font-bold">
             from 16s to under 2s
           </strong>{" "}
-          by implementing response token streaming through web sockets.
+          by implementing response token streaming through web sockets
         </li>
       </ul>
 
