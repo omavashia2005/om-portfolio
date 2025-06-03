@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ExperienceCard({ company, title, location, link, techStack = [] }) {
   return (
-    <div className="border border-black p-6 rounded-lg shadow-lg bg-black">
+    <div className="border border-black p-6 rounded-lg shadow-lg bg-black-800">
       <h2 className="text-2xl font-bold">{title} @ {company}</h2>
       {link && (
           <a href={link} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
@@ -17,13 +17,13 @@ export default function ExperienceCard({ company, title, location, link, techSta
       <ul className="list-disc pl-6 space-y-2 mt-3">
         <li>
           Developed a full-stack AI-driven contract generation and review system built on{" "}
-          <strong className="bg-yellow-100 text-black font-bold">
+          <strong className="bg-white text-black font-bold">
             TipTap with React.js and Python (FastAPI, LiteLLM, Dify.AI)
           </strong>
         </li>
         <li>
           Reduced LLM response time{" "}
-          <strong className="bg-yellow-100 text-black font-bold">
+          <strong className="bg-white text-black font-bold">
             from 16s to under 2s
           </strong>{" "}
           by implementing response token streaming through web sockets.

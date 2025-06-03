@@ -67,12 +67,21 @@ export default function Home() {
         <section data-aos="fade-up" className='my-40 min-h-screen text-center'>
           
         <div className="max-w-7xl mx-auto px-8 text-center">
-        <h1 className="text-3xl">My name is Om.</h1> <br/>
-        <h1 className="text-3xl">{"I'm  a Software Engineer, AI Enthusiast, and CS Junior @ ASU."}</h1> <br />
-        {/* <p className='font-medium text-gray-400'>I am Om Avashia, an Arizona State University (ASU) junior majoring in Computer Science at the Ira A Fulton Schools of Engineering and SWE Intern @ IP Author, where I'm working on using LLMs to redefine patenting. I have a passion for backend and API development, software engineering, and everything tech. I am also a Trinity College London Grade 5 electronic keyboard player. Feel free to reach out to me at oavashia@asu.edu! </p> */}
-        <p className='font-medium text-gray-400'>
-        Hi, I’m Om Avashia, a Computer Science junior at Arizona State University’s Ira A. Fulton Schools of Engineering. Currently, I’m a Software Engineering Intern at IP Author, where I’m harnessing large language models (LLMs) to reimagine patenting. My passion lies in backend engineering, API development, and building scalable, impactful software. I also enjoy dabbling in frontend technologies and continuously expanding my tech skill set. Outside the screen, I’m a Trinity College London Grade 5 electronic keyboard player and a tech enthusiast always exploring new tools and frameworks. Feel free to connect with me at oavashia@asu.edu!
-        </p> 
+        <h1 className="text-3xl">Hi! I'm Om.</h1> <br/>
+        <h1 className="text-3xl">{"Software Engineer | Fullstack Developer | AI Enthusiast "}</h1> <br />
+    
+              <p className='font-medium text-gray-400'>
+        I'm also a Computer Science junior at Arizona State University’s Ira A. Fulton Schools of Engineering. Currently, I’m a Software Engineering Intern at IP Author, where I’m harnessing {" "}
+        <span className='bg-white text-black font-bold'>large language models (LLMs) to reimagine patenting.</span> {" "}
+        My passion lies in {" "}
+        <span className='bg-white text-black font-bold'>backend & API development and building scalable, impactful software.</span> {" "}
+        I also enjoy working with frontend technologies and continuously expanding my skill set. <br/> <br/>
+        Off the screen, I enjoy working out, hold a Grade 5 electronic keyboard certification from Trinity College London, and am always exploring new tools and frameworks. Feel free to connect with me at{" "}
+        <span className='bg-white text-black font-bold'>oavashia@asu.edu! </span>
+      </p>
+
+
+    
         </div>
 
          {/* ---------------- STACK -------------------- */}

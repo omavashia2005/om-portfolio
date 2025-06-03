@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ProjectCard({ title, description, link, techStack = [] }) {
   return (
-    <div className="border border-black p-6 rounded-lg shadow-lg bg-black">
+    <div className="border border-black p-6 rounded-lg shadow-lg bg-black-800">
       {/* Clickable area with better semantics */}
       <a href={link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:underline text-white">
         <h3 className="text-2xl font-bold">{title}</h3>
