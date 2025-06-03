@@ -69,7 +69,7 @@ export default function Home() {
           
         <div className="max-w-7xl mx-auto px-8 text-center">
         <h1 className="text-3xl">{"Hi! I'm Om."}</h1> <br/>
-        <h1 className="text-3xl font-bold text-center">
+        <h1 className="text-3xl font-bold flex justify-center">
             <span className="inline-block min-h-[2.5rem] w-[250px] sm:w-[300px] md:w-[400px] align-middle mx-auto">
               <Typewriter
                 words={['Software Engineer', 'Fullstack Developer', 'AI Enthusiast']}
