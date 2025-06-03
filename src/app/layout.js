@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Om Kashyap Avashia – Software Engineer | Portfolio",
+  title: "Om Kashyap Avashia's Portfolio",
   description: "Om Kashyap Avashia's portfolio website. I'm a Software Engineer, AI Enthusiast, and CS Junior @ ASU. Visit my portfolio to explore projects and connect!",
   icons: {
     icon: "/favicon.png",
@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://omavashia.vercel.app" />
-        <meta property="og:title" content="Om Kashyap Avashia – Software Engineer | Portfolio" />
+        <meta property="og:title" content="Om Kashyap Avashia's Portfolio" />
         <meta property="og:description" content="Explore Om's work in AI, backend systems, and web development. Built with Next.js, React, and Tailwind." />
         <meta property="og:url" content="https://omavashia.com" />
         <meta property="og:image" content="/og-image.png" />
