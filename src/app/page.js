@@ -67,11 +67,11 @@ export default function Home() {
         <section data-aos="fade-up" className='my-40 min-h-screen text-center'>
           
         <div className="max-w-7xl mx-auto px-8 text-center">
-        <h1 className="text-3xl">Hi! I'm Om.</h1> <br/>
+        <h1 className="text-3xl">{"Hi! I'm Om."}</h1> <br/>
         <h1 className="text-3xl">{"Software Engineer | Fullstack Developer | AI Enthusiast "}</h1> <br />
     
               <p className='font-medium text-gray-400'>
-        I'm also a Computer Science junior at Arizona State University’s Ira A. Fulton Schools of Engineering. Currently, I’m a Software Engineering Intern at IP Author, where I’m harnessing {" "}
+        {"I'm also a Computer Science junior at Arizona State University’s Ira A. Fulton Schools of Engineering. Currently, I’m a Software Engineering Intern at IP Author, where I’m harnessing"} {" "}
         <span className='bg-white text-black font-bold'>large language models (LLMs) to reimagine patenting.</span> {" "}
         My passion lies in {" "}
         <span className='bg-white text-black font-bold'>backend & API development and building scalable, impactful software.</span> {" "}
