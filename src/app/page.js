@@ -42,6 +42,7 @@ export default function Home() {
 
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="icon" href='/favicon.png'></link>
     </Head>
 
      <section  id='home' />
@@ -103,7 +104,6 @@ export default function Home() {
             { name: "PostgreSQL", logo: "https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg" },
             { name: "Git", logo:"https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"}
           ].concat([
-            // Duplicate for seamless loop
             { name: "Java", logo: "https://www.vectorlogo.zone/logos/java/java-icon.svg" },
             { name: "Spring Boot", logo: "https://www.vectorlogo.zone/logos/springio/springio-icon.svg" },
             { name: "Python", logo: "https://www.vectorlogo.zone/logos/python/python-icon.svg" },
