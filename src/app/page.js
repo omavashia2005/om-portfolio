@@ -51,7 +51,7 @@ export default function Home() {
 
         {/* ---------------- ABOUT -------------------- */}
       <section id='about'></section>
-        <section data-aos="fade-up" className='min-h-screen text-center my-40'>
+        <section data-aos="fade-up" className='min-h-screen text-center my-24'>
           
         <div className="max-w-7xl mx-auto px-8 text-center">
         <h1 className="text-3xl">{"Hi! I'm Om."}</h1> <br/>
@@ -81,20 +81,20 @@ export default function Home() {
         </div>
 
          {/* ---------------- STACK -------------------- */}
-         <section className='text-center my-6'>
+         <section className='text-center my-24'>
           <a href="/Om_Avashia_Resume.pdf" download="Om_Kashyap_Resume.pdf" className='inline-flex items-center'>
             <span className='ml-2 bg-white text-black rounded px-3 py-1'>Download Resume</span>
           </a>
          </section>
 
-         <section className="overflow-hidden py-8 bg-black-50 my-10">
+         <section className="overflow-hidden py-30 bg-black-50 my-12">
             
             <div className='text-center'>
             <h1 className="text-3xl">Tech Stack</h1> <br/>
           </div>
       <motion.div
         className="flex gap-8"
-        animate={{ x: ['0%', '-50%'] }} // Moves left by 50% width
+        animate={{ x: ['0%', '-50%'] }} 
         transition={{ repeat: Infinity, duration: 20, ease: 'linear' }}
         style={{ width: 'max-content', display: 'flex' }}
       >
@@ -138,12 +138,11 @@ export default function Home() {
 
         </section>        
 
-    
 
     {/* ---------------- EXPERIENCE -------------------- */}
       <section id='experience'></section>
       <br/> <br/>
-      <section data-aos="fade-up" className='my-6 text-left'>
+      <section data-aos="fade-up" className='my-12 text-left'>
       <section data-aos="fade" className='text-center'>
         <h1 className="text-3xl">Experience</h1> <br/>
         </section>
@@ -167,7 +166,7 @@ export default function Home() {
       {/* ---------------- PROJECTS -------------------- */}
 
       <section id='projects'></section>
-      <section data-aos="fade-up" className='my-20 text-left'>
+      <section data-aos="fade-up" className='my-24 text-left'>
         <div className='text-center'>
         <section data-aos="fade-up">
           <h1 className="text-3xl">Projects</h1> <br/>
@@ -235,7 +234,7 @@ export default function Home() {
 
       {/* ---------------- CONTACT -------------------- */}
 
-      <section id='contact' data-aos="fade-up" className="my-40 text-center">
+      <section id='contact' data-aos="fade-up" className="my-24 text-center">
   <h1 className="text-3xl mb-4">Contact</h1>
   <div className="flex justify-center gap-4">
     
