@@ -12,7 +12,7 @@ export default function ProjectCard({ title, description, link, techStack = [] }
       <p className="text-sm text-white-700 mt-2">{description}</p>
 
       {techStack.length > 0 && (
-        <div className="flex gap-4 flex-wrap items-center mt-4">
+        <div className="flex gap-4 flex-wrap items-center mt-4 ">
           {techStack.map((tech, index) => (
             <Image
               key={index}
@@ -21,7 +21,7 @@ export default function ProjectCard({ title, description, link, techStack = [] }
               width={50}
               height={50}
               title={tech.name}
-              className="rounded"
+              className="rounded hover:drop-shadow-[0_0_16px_#ffffff]"
             />
           ))}
         </div>

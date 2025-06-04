@@ -40,7 +40,7 @@ export default function ExperienceCard({ company, title, location, link, techSta
               width={50}
               height={50}
               title={tech.name}
-              className="rounded"
+              className="rounded hover:drop-shadow-[0_0_16px_#ffffff]"
             />
           ))}
         </div>

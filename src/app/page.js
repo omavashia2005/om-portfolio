@@ -12,7 +12,6 @@ import React, {useEffect} from 'react';
 import TechStack from '@/components/TechStack';
 import {motion}  from 'framer-motion';
 const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'] });
-import Head from 'next/head';
 import { Typewriter } from 'react-simple-typewriter';
 
 export default function Home() {
@@ -51,7 +50,7 @@ export default function Home() {
 
         {/* ---------------- ABOUT -------------------- */}
       <section id='about'></section>
-        <section data-aos="fade-up" className='min-h-screen text-center my-24'>
+        <section  data-aos="fade-up" className='min-h-screen text-center my-24 pt-20'>
           
         <div className="max-w-7xl mx-auto px-8 text-center">
         <h1 className="text-3xl">{"Hi! I'm Om."}</h1> <br/>
@@ -81,8 +80,8 @@ export default function Home() {
         </div>
 
          {/* ---------------- STACK -------------------- */}
-         <section className='text-center my-24'>
-          <a href="/Om_Avashia_Resume.pdf" download="Om_Kashyap_Resume.pdf" className='inline-flex items-center'>
+         <section className='text-center my-24 '>
+          <a href="/Om_Avashia_Resume.pdf" download="Om_Kashyap_Resume.pdf" className='inline-flex items-center hover:drop-shadow-[0_0_5px_#ffffff]'>
             <span className='ml-2 bg-white text-black rounded px-3 py-1'>Download Resume</span>
           </a>
          </section>
@@ -142,8 +141,8 @@ export default function Home() {
     {/* ---------------- EXPERIENCE -------------------- */}
       <section id='experience'></section>
       <br/> <br/>
-      <section data-aos="fade-up" className='my-12 text-left'>
-      <section data-aos="fade" className='text-center'>
+      <section data-aos="fade-up" className='my-12 pt-0 text-left'>
+      <section data-aos="fade-up" className='text-center'>
         <h1 className="text-3xl">Experience</h1> <br/>
         </section>
       <ExperienceCard 
@@ -238,10 +237,10 @@ export default function Home() {
   <h1 className="text-3xl mb-4">Contact</h1>
   <div className="flex justify-center gap-4">
     
-    <a href='https://www.linkedin.com/in/omavashia/'>
+    <a href='https://www.linkedin.com/in/omavashia/' className='hover:drop-shadow-[0_0_16px_#3b82f6]'>
     <Image src="https://www.vectorlogo.zone/logos/linkedin/linkedin-tile.svg" width={40} height={40} alt="LinkedIn" />
     </a>
-    <a href='mailto:oavashia@asu.edu'>
+    <a href='mailto:oavashia@asu.edu' className='hover:drop-shadow-[0_0_16px_#3b82f6]'>
     <Image src="https://www.vectorlogo.zone/logos/gmail/gmail-tile.svg" width={40} height={40} alt="Mail" />
     </a>
     

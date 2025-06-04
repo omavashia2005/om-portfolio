@@ -15,6 +15,6 @@ export default function CustomCursor() {
   }, []);
 
   return (
-    <div id="custom-cursor" />
+    <div id="custom-cursor" className='hover:drop-shadow-gray-500'/>
   );
 }

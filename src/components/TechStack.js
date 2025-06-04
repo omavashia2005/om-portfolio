@@ -11,6 +11,7 @@ export default function TechStack({ techStack = [] }) {
           width={90} 
           height={90} 
           title={tech.name} 
+          className="rounded hover:drop-shadow-[0_0_16px_#ffffff]"
         />
       ))}
     </div>
