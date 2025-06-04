@@ -7,7 +7,6 @@ import Footer from '@/components/Footer';
 import ExperienceCard from '@/components/ExperienceCard';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import UniWorkCard from "@/components/UniWorkCard";
 import { JetBrains_Mono } from 'next/font/google';
 import React, {useEffect} from 'react';
 import TechStack from '@/components/TechStack';
@@ -40,17 +39,9 @@ export default function Home() {
   const internshipDescription = "Developed a full-stack AI-driven contract generation and review system using React.js, Python (FastAPI WebSockets, LiteLLM). Integrated Dify.ai with Tiptap for seamless UX and real-time rich text editing. Reduced LLM response time from 16s to <2s by implementing response token streaming through web sockets.";
   return (
     <div className={jetbrainsMono.className}>
-
-    <Head>
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="icon" href='/favicon.png'></link>
-
-    </Head>
-
-     <section  id='home' />
+     <section  id='home'/>
       <Navbar />
-      <section  id='home' />
-      <main className="p-8 pt-50">
+      <main className="p-8 py-30">
         <section className="flex flex-col md:flex-row items-center justify-center gap-4 p-4">
         <h1 className="text-3xl md:text-5xl font-bold"> 
           {"print('Hello, World!')"}<span className="caret">▌</span>
@@ -58,14 +49,9 @@ export default function Home() {
         <Image src="/fav.JPG" width={450} height={450} alt="Pic" className="w-full max-w-xs md:max-w-md" />
         </section>
 
-      
-
-
-
         {/* ---------------- ABOUT -------------------- */}
       <section id='about'></section>
-      
-        <section data-aos="fade-up" className='my-40 min-h-screen text-center'>
+        <section data-aos="fade-up" className='min-h-screen text-center my-40'>
           
         <div className="max-w-7xl mx-auto px-8 text-center">
         <h1 className="text-3xl">{"Hi! I'm Om."}</h1> <br/>
@@ -95,13 +81,13 @@ export default function Home() {
         </div>
 
          {/* ---------------- STACK -------------------- */}
-         <section className='text-center py-10'>
+         <section className='text-center my-6'>
           <a href="/Om_Avashia_Resume.pdf" download="Om_Kashyap_Resume.pdf" className='inline-flex items-center'>
             <span className='ml-2 bg-white text-black rounded px-3 py-1'>Download Resume</span>
           </a>
-      </section>
+         </section>
 
-         <section className="overflow-hidden py-8 bg-black-50 my-20">
+         <section className="overflow-hidden py-8 bg-black-50 my-10">
             
             <div className='text-center'>
             <h1 className="text-3xl">Tech Stack</h1> <br/>
@@ -157,7 +143,7 @@ export default function Home() {
     {/* ---------------- EXPERIENCE -------------------- */}
       <section id='experience'></section>
       <br/> <br/>
-      <section data-aos="fade-up" className='text-left my-40'>
+      <section data-aos="fade-up" className='my-6 text-left'>
       <section data-aos="fade" className='text-center'>
         <h1 className="text-3xl">Experience</h1> <br/>
         </section>
@@ -181,7 +167,7 @@ export default function Home() {
       {/* ---------------- PROJECTS -------------------- */}
 
       <section id='projects'></section>
-      <section data-aos="fade-up" className='my-40 text-left'>
+      <section data-aos="fade-up" className='my-20 text-left'>
         <div className='text-center'>
         <section data-aos="fade-up">
           <h1 className="text-3xl">Projects</h1> <br/>
