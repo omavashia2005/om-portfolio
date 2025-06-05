@@ -176,7 +176,7 @@ export default function Home() {
 
           title={"Contract Author (internship project)"}
           description={contractAuthorDesc}
-          link={contractAuthorLink}
+          link={10}
           techStack={[
             { name: "React.js", logo: "https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" },
             { name: "JS", logo: "https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" },
