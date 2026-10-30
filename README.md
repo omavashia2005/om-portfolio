@@ -1,1 +1,3 @@
-Visit at [omavashia.vercel.app](https://omavashia.vercel.app)
+This was my older website. 
+
+Find my latest one here [omavashia.com](https://omavashia.com)
